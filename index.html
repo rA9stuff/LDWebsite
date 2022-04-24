@@ -104,13 +104,6 @@
             font-family: sans-serif;
             background-color: rgba(30, 30, 30, 1);
         }
-        li {
-            font-weight: bold;
-            color : rgba(200, 200, 200, 1);
-            font-size: 100%;
-            font-family: sans-serif;
-            margin: 20px;
-        }
         .center {
           display: block;
           margin-left: auto;
@@ -315,7 +308,7 @@ zoom: 100%;
             <table style="margin-left: 1em; margin-top: 1em;">
                 <tr>
                     <td style="width: 0px;">
-                        <img src="https://pbs.twimg.com/profile_images/1510401532671369219/uv9FkMe7_400x400.jpg" style="width:50px; height:50px; vertical-allign: middle; border-radius: 50%;">
+                        <img src="https://pbs.twimg.com/profile_images/1190202816989736961/18bx0Fc0_400x400.jpg" style="width:50px; height:50px; vertical-allign: middle; border-radius: 50%;">
                         </div>
                     </td>
                     <td style="width: 1em;"></td>
@@ -363,7 +356,7 @@ zoom: 100%;
             <table style="margin-left: 1em; margin-top: 1em;">
                 <tr>
                     <td style="width: 0px;">
-                        <img src="https://pbs.twimg.com/profile_images/1506459925559586817/jDeK65DO_400x400.jpg" style="width:50px; height:50px; vertical-allign: middle; border-radius: 50%;">
+                        <img src="https://pbs.twimg.com/profile_images/1474699530339766279/jgCV450K_400x400.jpg" style="width:50px; height:50px; vertical-allign: middle; border-radius: 50%;">
                         </div>
                     </td>
                     <td style="width: 1em;"></td>
@@ -481,46 +474,43 @@ zoom: 100%;
                     <td style="width: 800px; text-align:left;">
                         <h9>Version 2.2</h9>
                         
-                        <li>LeetDown now supports M1 macs on any version of macOS.</li>
-                        <li>LeetDown now supports A6 devices for iOS 8.4.1 downgrades.</li>
-                        <li>LeetDown now works much more reliably thanks to the many technical changes in the code.</li>
-                        <br>
-                        <br>
-                        
+                        <h6><li>LeetDown now supports M1 macs on any version of macOS.</li></h6>
+                        <h6><li>LeetDown now supports A6 devices for iOS 8.4.1 downgrades.</li></h6>
+                        <h6><li>LeetDown now works much more reliably thanks to the many technical changes in the code.</li></h6>
                         <h8>Version 2.2 Technical Changes</h8>
-                        <li>LeetDown now has a class named "DFUDevice" that deals with all kinds of device interactions in OOP manner. By creating a pointer object to connect to devices instead of disconnecting and reconnecting in every method in main, stability improves vastly and maintaining the code gets much easier.</li>
-                        <li>Plist modifications/interactions are also now done in a class called "plistModifier". Maintaining the code *again* gets simpler and cleaner with this approach.</li>
-                        <li>iPwnder-lite replaces iPwnder32 to improve reliability and resolve apple silicon mac issues while exploiting devices.</li>
-                        <li>Patched version of futurerestore was replaced with Cryptic's version of futurerestore-nightly build.</li>
-                        <li>LeetDown now checks the md5 of the selected/downloaded iPSW to avoid any issues caused by corrupted files (though it is possible to skip this check with an option in settings).</li>
+                        <h6><li>LeetDown now has a class named "DFUDevice" that deals with all kinds of device interactions in OOP manner. By creating a pointer object to connect to devices instead of disconnecting and reconnecting in every method in main, stability improves vastly and maintaining the code gets much easier.</li></h6>
+                        <h6><li>Plist modifications/interactions are also now done in a class called "plistModifier". Maintaining the code *again* gets simpler and cleaner with this approach.</li></h6>
+                        <h6><li>iPwnder-lite replaces iPwnder32 to improve reliability and resolve apple silicon mac issues while exploiting devices.</li></h6>
+                        <h6><li>Patched version of futurerestore was replaced with Cryptic's version of futurerestore-nightly build.</li></h6>
+                        <h6><li>LeetDown now checks the md5 of the selected/downloaded iPSW to avoid any issues caused by corrupted files (though it is possible to skip this check with an option in settings).</li></h6>
                         <br>
                         <br>
                         
                         <h9>Version 2.1</h9>
-                        <li>LeetDown now has a settings view with an option to enable debugging of the app and futurerestore for troubleshooting issues easier.</li>
-                        <li>LeetDown now asks if you want to save a copy of the OTA blob locally, in case apple decides to unsign OTA firmwares some day.</li>
-                        <li>LeetDown can now download an iPSW for the connected device automatically, if you're unsure about which iPSW to use.</li>
-                        <li>LeetDown now checks if the user picked iPSW BuildManifest matches with destination firmware of the connected device.</li>
-                        <li>Fixes bootlogo scaling on iPads (I don't have any A7 iPads to test my changes so this hopefully works).</li>
-                        <li>Stability and UI improvements.</li>
+                        <h6><li>LeetDown now has a settings view with an option to enable debugging of the app and futurerestore for troubleshooting issues easier.</li></h6>
+                        <h6><li>LeetDown now asks if you want to save a copy of the OTA blob locally, in case apple decides to unsign OTA firmwares some day.</li></h6>
+                        <h6><li>LeetDown can now download an iPSW for the connected device automatically, if you're unsure about which iPSW to use.</li></h6>
+                        <h6><li>LeetDown now checks if the user picked iPSW BuildManifest matches with destination firmware of the connected device.</li></h6>
+                        <h6><li>Fixes bootlogo scaling on iPads (I don't have any A7 iPads to test my changes so this hopefully works).</li></h6>
+                        <h6><li>Stability and UI improvements.</li></h6>
                         <br>
                         <br>
                         <h9>Version 2.0.1</h9>
-                        <li>LeetDown now uses standard macOS tmp directory (NSTemporaryDirectory) to extract the iPSW (requested by m1stadev).</li>
-                        <li>Added a new view called "DFU Helper" which aims to make entering DFU mode easier for inexperienced users.</li>
-                        <li>Slight UI, app icon and bootlogo changes.</li>
-                        <li>Redesigned DMG window.</li>
+                        <h6><li>LeetDown now uses standard macOS tmp directory (NSTemporaryDirectory) to extract the iPSW (requested by m1stadev).</li></h6>
+                        <h6><li>Added a new view called "DFU Helper" which aims to make entering DFU mode easier for inexperienced users.</li></h6>
+                        <h6><li>Slight UI, app icon and bootlogo changes.</li></h6>
+                        <h6><li>Redesigned DMG window.</li></h6>
                         <br>
                         <br>
                         <h9>Version 2.0</h9>
                         <h6>LeetDown 2.0 is a completely rewritten version of LeetDown with many bug fixes and stability improvements.</h6>
                         <h6>Changes include:</h6>
-                        <li>Complete rewrite of the app in ObjC with proper libirecovery integration to handle the process much better.</li>
-                        <li>Adds (experimental) M1 Mac support.</li>
-                        <li>LeetDown no longer needs any dependencies installed on the host system to run.</li>
-                        <li>Less storage will be used when downgrading (nearly ~5GBs of less storage).</li>
-                        <li>Slight UI and app icon changes.</li>
-                        <li>macOS will no longer quarantine LeetDown, thanks to Matty :)</li>
+                        <h6><li>Complete rewrite of the app in ObjC with proper libirecovery integration to handle the process much better.</li></h6>
+                        <h6><li>Adds (experimental) M1 Mac support.</li></h6>
+                        <h6><li>LeetDown no longer needs any dependencies installed on the host system to run.</li></h6>
+                        <h6><li>Less storage will be used when downgrading (nearly ~5GBs of less storage).</li></h6>
+                        <h6><li>Slight UI and app icon changes.</li></h6>
+                        <h6><li>macOS will no longer quarantine LeetDown, thanks to Matty :)</li></h6>
                     </td>
                 </tr>
             </table>
